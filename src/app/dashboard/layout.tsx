@@ -4,7 +4,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
   return (
     <>
       <DashboardNav />
-      {children}
+      <div style={{width:"75%",marginLeft:"25%"}}>{children}</div>
     </>
   )
 }

@@ -8,10 +8,10 @@ const Menu = () => {
       <nav className="vnav">
         <ul>
           <li>
-            <Link href="/dashboard/">Hub</Link>
+            <Link href="/Dashboard/">Hub</Link>
           </li>
           <li>
-            <Link href="/dashboard/profile">Profile</Link>
+            <Link href="/Dashboard/profile">Profile</Link>
           </li>
         </ul>
       </nav>
