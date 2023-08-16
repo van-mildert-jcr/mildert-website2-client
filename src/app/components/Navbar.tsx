@@ -97,7 +97,7 @@ export default function Navbar() {
                               <Link className="dropdown-item" href="/content/events/bops">BOPs</Link>
                               <Link className="dropdown-item" href="/content/events/balls">Balls</Link>
                               <Link className="dropdown-item" href="/content/events/fashion-show">Charity Fashion Show</Link>
-                              <Link className="dropdown-item" href="/content/events/48-hour">48 Hour Musical</Link>
+                              <Link className="dropdown-item" href="/content/events/48-hour-musical">48 Hour Musical</Link>
                           </div>
                       </div>
                       <div className="nav-item dropdown">
