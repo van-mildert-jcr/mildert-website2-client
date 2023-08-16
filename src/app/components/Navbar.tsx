@@ -55,10 +55,10 @@ export default function Navbar() {
                               <Link className="dropdown-item" href="/content/college/accommodation">Accommodation</Link>
                               <Link className="dropdown-item" href="/content/college/bar">The Bar</Link>
                               <Link className="dropdown-item" href="/content/college/gym">The Gym</Link>
-                              <Link className="dropdown-item" href="/content/college/studyspaces">Study Spaces</Link>
-                              <Link className="dropdown-item" href="/content/college/musicroom">Music Rooms</Link>
+                              <Link className="dropdown-item" href="/content/college/study-spaces">Study Spaces</Link>
+                              <Link className="dropdown-item" href="/content/college/music-room">Music Rooms</Link>
                               <Link className="dropdown-item" href="/content/college/shop">Shop</Link>
-                              <Link className="dropdown-item" href="/content/college/tenniscourt">Tennis Courts</Link>
+                              <Link className="dropdown-item" href="/content/college/tennis-court">Tennis Courts</Link>
                           </div>
                       </div>
                       <div className="nav-item dropdown">
@@ -67,11 +67,11 @@ export default function Navbar() {
                               Applicants & Freshers
                           </div>
                           <div className="dropdown-menu" aria-labelledby="menu-fresher">
-                              <Link className="dropdown-item" href="/content/freshers/whymildert">Why Mildert?</Link>
-                              <Link className="dropdown-item" href="/content/freshers/opendays">Open Days</Link>
-                              <Link className="dropdown-item" href="/content/freshers/freshersweek">Freshers' Week</Link>
-                              <Link className="dropdown-item" href="/content/freshers/fresheradvice">Fresher Advice</Link>
-                              <Link className="dropdown-item" href="/content/freshers/fresher_faq">Fresher FAQs</Link>
+                              <Link className="dropdown-item" href="/content/freshers/why-mildert">Why Mildert?</Link>
+                              <Link className="dropdown-item" href="/content/freshers/open-days">Open Days</Link>
+                              <Link className="dropdown-item" href="/content/freshers/freshers-week">Freshers' Week</Link>
+                              <Link className="dropdown-item" href="/content/freshers/advice">Fresher Advice</Link>
+                              <Link className="dropdown-item" href="/content/freshers/faq">Fresher FAQs</Link>
                           </div>
                       </div>
                       <div className="nav-item dropdown">
@@ -81,9 +81,9 @@ export default function Navbar() {
                           </div>
                           <div className="dropdown-menu" aria-labelledby="menu-extra">
                               <Link className="dropdown-item" href="/content/extracurricular/sports">Sports Clubs</Link>
-                              <Link className="dropdown-item" href="/content/extracurricular/committees_societies">Committees & Societies</Link>
+                              <Link className="dropdown-item" href="/content/extracurricular/committees-societies">Committees & Societies</Link>
                               <Link className="dropdown-item" href="/content/extracurricular/outreach">Outreach Projects</Link>
-                              <Link className="dropdown-item" href="/content/extracurricular/interviewtips">Interview Technique</Link>
+                              <Link className="dropdown-item" href="/content/extracurricular/interview-tips">Interview Technique</Link>
                           </div>
                       </div>
                       <div className="nav-item dropdown">
@@ -96,8 +96,8 @@ export default function Navbar() {
                               <Link className="dropdown-item" href="/content/events/formals">Formals</Link>
                               <Link className="dropdown-item" href="/content/events/bops">BOPs</Link>
                               <Link className="dropdown-item" href="/content/events/balls">Balls</Link>
-                              <Link className="dropdown-item" href="/content/events/fashionshow">Charity Fashion Show</Link>
-                              <Link className="dropdown-item" href="/content/events/48hour">48 Hour Musical</Link>
+                              <Link className="dropdown-item" href="/content/events/fashion-show">Charity Fashion Show</Link>
+                              <Link className="dropdown-item" href="/content/events/48-hour">48 Hour Musical</Link>
                           </div>
                       </div>
                       <div className="nav-item dropdown">
@@ -106,8 +106,8 @@ export default function Navbar() {
                               Tech
                           </div>
                           <div className="dropdown-menu" aria-labelledby="menu-tech">
-                              <Link className="dropdown-item" href="/content/tech/techcomm">Technical Committee</Link>
-                              <Link className="dropdown-item" href="/content/tech/techhires">Hires</Link>
+                              <Link className="dropdown-item" href="/content/tech/tech-comm">Technical Committee</Link>
+                              <Link className="dropdown-item" href="/content/tech/tech-hires">Hires</Link>
                           </div>
                       </div>
                       <Link id="menu-t&s" className="nav-item nav-link" href="/content/welfare">Talk and Support</Link>
