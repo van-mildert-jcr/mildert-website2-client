@@ -28,12 +28,12 @@ export default function Navbar() {
                               About Us
                           </div>
                           <div className="dropdown-menu" aria-labelledby="menu-about">
-                              <Link className="dropdown-item" href="/thejcr.php">What is the JCR?</Link>
-                              <Link className="dropdown-item" href="/purpose.php">JCR Purpose</Link>
-                              <Link className="dropdown-item" href="/whoswho.php">Who's Who</Link>
-                              <Link className="dropdown-item" href="/faq.php">FAQ</Link>
-                              <Link className="dropdown-item" href="/contact.php">Contact Us</Link>
-                              <Link className="dropdown-item" href="/charity.php">Charity Details</Link>
+                              <Link className="dropdown-item" href="/content/about/thejcr">What is the JCR?</Link>
+                              <Link className="dropdown-item" href="/content/about/purpose">JCR Purpose</Link>
+                              <Link className="dropdown-item" href="/content/about/whoswho">Who's Who</Link>
+                              <Link className="dropdown-item" href="/content/about/faq">FAQ</Link>
+                              <Link className="dropdown-item" href="/content/about/contact">Contact Us</Link>
+                              <Link className="dropdown-item" href="/content/about/charity">Charity Details</Link>
                           </div>
                       </div>
                       <div className="nav-item dropdown">
@@ -42,8 +42,8 @@ export default function Navbar() {
                               Governance
                           </div>
                           <div className="dropdown-menu" aria-labelledby="menu-gov">
-                              <Link className="dropdown-item" href="/constitution">The Constitution</Link>
-                              <Link className="dropdown-item" href="/voting.php">Voting</Link>
+                              <Link className="dropdown-item" href="/content/gov/constitution">The Constitution</Link>
+                              <Link className="dropdown-item" href="/content/gov/voting">Voting</Link>
                           </div>
                       </div>
                       <div className="nav-item dropdown">
@@ -52,13 +52,13 @@ export default function Navbar() {
                               The College
                           </div>
                           <div className="dropdown-menu" aria-labelledby="menu-college">
-                              <Link className="dropdown-item" href="/accommodation.php">Accommodation</Link>
-                              <Link className="dropdown-item" href="/bar.php">The Bar</Link>
-                              <Link className="dropdown-item" href="/gym.php">The Gym</Link>
-                              <Link className="dropdown-item" href="/studyspaces.php">Study Spaces</Link>
-                              <Link className="dropdown-item" href="/musicroom.php">Music Rooms</Link>
-                              <Link className="dropdown-item" href="/shop.php">Shop</Link>
-                              <Link className="dropdown-item" href="/tenniscourt.php">Tennis Courts</Link>
+                              <Link className="dropdown-item" href="/content/college/accommodation">Accommodation</Link>
+                              <Link className="dropdown-item" href="/content/college/bar">The Bar</Link>
+                              <Link className="dropdown-item" href="/content/college/gym">The Gym</Link>
+                              <Link className="dropdown-item" href="/content/college/studyspaces">Study Spaces</Link>
+                              <Link className="dropdown-item" href="/content/college/musicroom">Music Rooms</Link>
+                              <Link className="dropdown-item" href="/content/college/shop">Shop</Link>
+                              <Link className="dropdown-item" href="/content/college/tenniscourt">Tennis Courts</Link>
                           </div>
                       </div>
                       <div className="nav-item dropdown">
@@ -67,11 +67,11 @@ export default function Navbar() {
                               Applicants & Freshers
                           </div>
                           <div className="dropdown-menu" aria-labelledby="menu-fresher">
-                              <Link className="dropdown-item" href="/whymildert.php">Why Mildert?</Link>
-                              <Link className="dropdown-item" href="/opendays.php">Open Days</Link>
-                              <Link className="dropdown-item" href="/freshersweek.php">Freshers' Week</Link>
-                              <Link className="dropdown-item" href="/fresheradvice.php">Fresher Advice</Link>
-                              <Link className="dropdown-item" href="/fresher_faq.php">Fresher FAQs</Link>
+                              <Link className="dropdown-item" href="/content/freshers/whymildert">Why Mildert?</Link>
+                              <Link className="dropdown-item" href="/content/freshers/opendays">Open Days</Link>
+                              <Link className="dropdown-item" href="/content/freshers/freshersweek">Freshers' Week</Link>
+                              <Link className="dropdown-item" href="/content/freshers/fresheradvice">Fresher Advice</Link>
+                              <Link className="dropdown-item" href="/content/freshers/fresher_faq">Fresher FAQs</Link>
                           </div>
                       </div>
                       <div className="nav-item dropdown">
@@ -80,10 +80,10 @@ export default function Navbar() {
                               Extracurricular
                           </div>
                           <div className="dropdown-menu" aria-labelledby="menu-extra">
-                              <Link className="dropdown-item" href="/sports.php">Sports Clubs</Link>
-                              <Link className="dropdown-item" href="/committees_societies.php">Committees & Societies</Link>
-                              <Link className="dropdown-item" href="/outreach.php">Outreach Projects</Link>
-                              <Link className="dropdown-item" href="/interviewtips.php">Interview Technique</Link>
+                              <Link className="dropdown-item" href="/content/extracurricular/sports">Sports Clubs</Link>
+                              <Link className="dropdown-item" href="/content/extracurricular/committees_societies">Committees & Societies</Link>
+                              <Link className="dropdown-item" href="/content/extracurricular/outreach">Outreach Projects</Link>
+                              <Link className="dropdown-item" href="/content/extracurricular/interviewtips">Interview Technique</Link>
                           </div>
                       </div>
                       <div className="nav-item dropdown">
@@ -93,11 +93,11 @@ export default function Navbar() {
                           </div>
                           <div className="dropdown-menu" aria-labelledby="menu-events">
                               <p className="mb-0 ps-3 fst-italic">Our events include:</p>
-                              <Link className="dropdown-item" href="/formals.php">Formals</Link>
-                              <Link className="dropdown-item" href="/bops.php">BOPs</Link>
-                              <Link className="dropdown-item" href="/balls.php">Balls</Link>
-                              <Link className="dropdown-item" href="/fashionshow.php">Charity Fashion Show</Link>
-                              <Link className="dropdown-item" href="/48hour.php">48 Hour Musical</Link>
+                              <Link className="dropdown-item" href="/content/events/formals">Formals</Link>
+                              <Link className="dropdown-item" href="/content/events/bops">BOPs</Link>
+                              <Link className="dropdown-item" href="/content/events/balls">Balls</Link>
+                              <Link className="dropdown-item" href="/content/events/fashionshow">Charity Fashion Show</Link>
+                              <Link className="dropdown-item" href="/content/events/48hour">48 Hour Musical</Link>
                           </div>
                       </div>
                       <div className="nav-item dropdown">
@@ -106,11 +106,11 @@ export default function Navbar() {
                               Tech
                           </div>
                           <div className="dropdown-menu" aria-labelledby="menu-tech">
-                              <Link className="dropdown-item" href="/techcomm.php">Technical Committee</Link>
-                              <Link className="dropdown-item" href="/techhires.php">Hires</Link>
+                              <Link className="dropdown-item" href="/content/tech/techcomm">Technical Committee</Link>
+                              <Link className="dropdown-item" href="/content/tech/techhires">Hires</Link>
                           </div>
                       </div>
-                      <Link id="menu-t&s" className="nav-item nav-link" href="/welfare.php">Talk and Support</Link>
+                      <Link id="menu-t&s" className="nav-item nav-link" href="/content/welfare">Talk and Support</Link>
                       <ColourMode />
                   </div>
                   <Link href="/Dashboard">Dashboard</Link>
