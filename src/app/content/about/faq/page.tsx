@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export const metadata = {
   title: "FAQ",
   description: "Frequently asked questions about the JCR and College",
@@ -32,7 +34,7 @@ export default function FAQ() {
               data-bs-parent="#S1"
             >
               <div className="accordion-body">
-                See <a href="/thejcr.php">What is the JCR?</a>
+                See <Link href="/content/about/thejcr">What is the JCR?</Link>
               </div>
             </div>
           </div>
@@ -64,7 +66,7 @@ export default function FAQ() {
                 is person you want; the FACSO also oversees the website, the
                 shop and tech.
                 <br />
-                Contact details can be found <a href="/contact.php">here</a>.
+                Contact details can be found <Link href="/content/about/contact">here</Link>.
               </div>
             </div>
           </div>
@@ -108,7 +110,7 @@ export default function FAQ() {
                 <p>
                   Some JCR positions you must apply for, some you must stand for
                   election. Appendix A of the
-                  <a href="/constitution">Standing Orders</a> will give an
+                  <Link href="/content/gov/constitution">Standing Orders</Link> will give an
                   indication of when the processes will take place. Contact the
                   JCR Chair or President if you have any queries.
                 </p>
@@ -199,7 +201,7 @@ export default function FAQ() {
             >
               <div className="accordion-body">
                 The Standing Orders or Constitution are the rules for how the
-                JCR is run. They can be found <a href="/constitution">here</a>.
+                JCR is run. They can be found <Link href="/content/gov/constitution">here</Link>.
               </div>
             </div>
           </div>
