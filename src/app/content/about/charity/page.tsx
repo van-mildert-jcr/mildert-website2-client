@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export const metadata = {
   title: "JCR Charity",
   description: "Van Mildert College Junior Common Room Charity Information",
@@ -22,7 +24,7 @@ export default function Charity() {
             </p>
             <p>
               The CIO constitution and our Standing Orders can be found{" "}
-              <a href="/constitution">here</a>.
+              <Link href="/content/gov/constitution">here</Link>.
             </p>
             <p>
               This website is operated by Van Mildert College Junior Common
