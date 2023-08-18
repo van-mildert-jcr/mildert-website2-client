@@ -64,6 +64,9 @@ export default function Navbar() {
                   <Link className="dropdown-item" href="/content/about/purpose">
                     JCR Purpose
                   </Link>
+                  <Link className="dropdown-item" href="/content/about/whos-who">
+                    Who's Who
+                  </Link>
                   <Link className="dropdown-item" href="/content/about/faq">
                     FAQ
                   </Link>
