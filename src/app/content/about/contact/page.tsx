@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export const metadata = {
   title: "Contact Us",
   description: "Van Mildert College JCR Contact Details",
@@ -108,7 +110,7 @@ export default function Contact() {
           </ul>
           <p>
             Other email addresses can be found on the{" "}
-            <a href="/whoswho.php">Who{"'"}s Who page</a>.
+            <Link href="/content/about/whos-who">Who{"'"}s Who page</Link>.
           </p>
         </div>
       </div>
