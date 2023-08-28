@@ -156,7 +156,7 @@ export default function Bar() {
         </div>
         <div className="col-md-6 d-flex align-items-center flex-column">
           <div className="thumbnail-img">
-            <img className="img-fluid" src="assets/img/general/bar2.JPG" alt="..." />
+            <img className="img-fluid" src="/assets/img/general/bar2.jpg" alt="..." />
           </div>
         </div>
       </div>
