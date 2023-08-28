@@ -1,3 +1,5 @@
+import "./style.scss";
+
 export const metadata = {
   title: "Freshers Advice",
   description: "Advice for Van Mildert Freshers",
@@ -68,7 +70,7 @@ export default function FresherAdvice() {
       </div>
       <hr/>
       <h2>Here are some things we suggest you bring along:</h2>
-      <table className="table table-bordered">
+      <table id={"fresher-advice-packing-list"} className="table table-bordered">
         <tbody>
         <tr>
           <th scope="row">
