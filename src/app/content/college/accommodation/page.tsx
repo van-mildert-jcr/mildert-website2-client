@@ -45,17 +45,19 @@ export default function Accommodation() {
       </p>
       <h2>Fees</h2>
       <p>
-        The
-        <a
+        The <a
           href="https://www.durham.ac.uk/colleges-and-student-experience/accommodation-and-catering/residence-charges/undergraduate-residence-charges/"
-          target="_blank">
+          target="_blank"
+        >
           accommodation fees
-        </a>
-        are not cheap and the JCRs continue to oppose the huge increases over the last couple of decades.
+        </a> are not cheap and the JCRs continue to oppose the huge increases over the last couple of decades.
         However, we do recommend that all freshers live in College if they can.
-        Financial support for home students is available in the form of the
-        <a href="https://www.dur.ac.uk/student.finance/current/support/dgs/" target="_blank">Durham Grant</a>
-        which has been expanded to cover a wider range of household income.
+        Financial support for home students is available in the form of the <a
+          href="https://www.dur.ac.uk/student.finance/current/support/dgs/"
+          target="_blank"
+        >
+          Durham Grant
+        </a> which has been expanded to cover a wider range of household income.
       </p>
       <h2>Returners</h2>
       <p>
