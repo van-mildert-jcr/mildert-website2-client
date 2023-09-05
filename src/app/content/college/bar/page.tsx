@@ -20,12 +20,12 @@ export default function Bar() {
         <br/>Friday: 19:00-00:00
         <br/>Saturday: 12:00-00:00
         <br/>Sunday: 12:00-23:00
-        <br/>*We also open till midnight on formals if it's busy!
+        <br/>*We also open till midnight on formals if it&pos;s busy!
       </p>
 
       <hr />
 
-      <!-- Carousel Images -->
+      {/* <!-- Carousel Images --> */}
       <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel">
         <div className="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active"
@@ -73,12 +73,12 @@ export default function Bar() {
           <span className="visually-hidden">Next</span>
         </button>
       </div>
-      <!-- End of carousel -->
+      {/* <!-- End of carousel --> */}
 
       <hr />
 
-      <!--    Bar Team Outline -->
-      <div className="container content-sm" style="margin-top: 30px">
+      {/* <!--    Bar Team Outline --> */}
+      <div className="container content-sm" style={{marginTop: "30px"}}>
         <h2>THE TEAM</h2>
 
         <div className="row">
@@ -160,7 +160,7 @@ export default function Bar() {
           </div>
         </div>
       </div>
-      <!--/row-->
+      {/* <!--/row--> */}
       <hr />
       <div className="row">
         <div className="col-sm-2"></div>

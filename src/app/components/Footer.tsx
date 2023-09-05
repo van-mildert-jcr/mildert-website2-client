@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <div id="footer" className="container-fluid mt-md-3 py-2 bg-body-tertiary">
+    <div id="footer" className="container-fluid py-2 bg-body-tertiary">
       <p className="text-center mb-0">
         This website is operated by Van Mildert College Junior Common Room,
         a charity (CIO) registered in England and Wales

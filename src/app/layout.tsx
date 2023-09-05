@@ -23,9 +23,9 @@ export default function RootLayout({
   return (
     <html lang="en" data-bs-theme="dark">
       <Head />
-      <body className={inter.className + " pt-md-3"}>
+      <body className={inter.className}>
         <Navbar />
-        <div className="d-flex align-items-center text-center" style={{minHeight: "calc(100vh - 105px)"}}>
+        <div className="d-flex align-items-center text-center" style={{minHeight: "calc(100vh - 125px)",marginTop:"55px",paddingTop:"20px",marginBottom:"20px"}}>
           <div id="content" className="container text-center bg-body-secondary rounded" style={{minHeight: "0"}}>
             {children}
           </div>
