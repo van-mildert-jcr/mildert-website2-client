@@ -30,9 +30,7 @@ export default function FresherAdvice() {
                   We've got your back
                 </h3>
                 <p>
-                  University is a big change from school and we know that. As Freps, we are here to support
-                  and help you. If you have a problem, trust us to give you a hand and don't think you have to
-                  go it alone. We're here for you.
+                  University is a big change from school and we know that. As Freps, we are here to support and help you, so please don't be afraid to approach us for a chat! Our talk and support team will be here throughout the whole year for a chat, sexual health supplies or just a cup of tea. There is also university welfare and support teams, including college welfare who are always available to support you.
                 </p>
               </div>
               <div className="p-2 bd-highlight">

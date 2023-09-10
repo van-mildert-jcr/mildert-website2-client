@@ -168,12 +168,6 @@ export default function Navbar() {
                   </Link>
                   <Link
                     className="dropdown-item"
-                    href="/content/freshers/open-days"
-                  >
-                    Open Days
-                  </Link>
-                  <Link
-                    className="dropdown-item"
                     href="/content/freshers/freshers-week"
                   >
                     Freshers{"'"} Week
