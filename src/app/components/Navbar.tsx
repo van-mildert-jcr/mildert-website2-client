@@ -58,22 +58,22 @@ export default function Navbar() {
                   About Us
                 </div>
                 <div className="dropdown-menu" aria-labelledby="menu-about">
-                  <Link className="dropdown-item" href="/content/about/thejcr">
+                  <Link className="dropdown-item" href="/about/thejcr">
                     What is the JCR?
                   </Link>
-                  <Link className="dropdown-item" href="/content/about/purpose">
+                  <Link className="dropdown-item" href="/about/purpose">
                     JCR Purpose
                   </Link>
-                  <Link className="dropdown-item" href="/content/about/whos-who">
+                  <Link className="dropdown-item" href="/about/whos-who">
                     Who's Who
                   </Link>
-                  <Link className="dropdown-item" href="/content/about/faq">
+                  <Link className="dropdown-item" href="/about/faq">
                     FAQ
                   </Link>
-                  <Link className="dropdown-item" href="/content/about/contact">
+                  <Link className="dropdown-item" href="/about/contact">
                     Contact Us
                   </Link>
-                  <Link className="dropdown-item" href="/content/about/charity">
+                  <Link className="dropdown-item" href="/about/charity">
                     Charity Details
                   </Link>
                 </div>
@@ -92,11 +92,11 @@ export default function Navbar() {
                 <div className="dropdown-menu" aria-labelledby="menu-gov">
                   <Link
                     className="dropdown-item"
-                    href="/content/gov/constitution"
+                    href="/gov/constitution"
                   >
                     The Constitution
                   </Link>
-                  <Link className="dropdown-item" href="/content/gov/voting">
+                  <Link className="dropdown-item" href="/gov/voting">
                     Voting
                   </Link>
                 </div>
@@ -115,34 +115,34 @@ export default function Navbar() {
                 <div className="dropdown-menu" aria-labelledby="menu-college">
                   <Link
                     className="dropdown-item"
-                    href="/content/college/accommodation"
+                    href="/college/accommodation"
                   >
                     Accommodation
                   </Link>
-                  <Link className="dropdown-item" href="/content/college/bar">
+                  <Link className="dropdown-item" href="/college/bar">
                     The Bar
                   </Link>
-                  <Link className="dropdown-item" href="/content/college/gym">
+                  <Link className="dropdown-item" href="/college/gym">
                     The Gym
                   </Link>
                   <Link
                     className="dropdown-item"
-                    href="/content/college/study-spaces"
+                    href="/college/study-spaces"
                   >
                     Study Spaces
                   </Link>
                   <Link
                     className="dropdown-item"
-                    href="/content/college/music-room"
+                    href="/college/music-room"
                   >
                     Music Rooms
                   </Link>
-                  <Link className="dropdown-item" href="/content/college/shop">
+                  <Link className="dropdown-item" href="/college/shop">
                     Shop
                   </Link>
                   <Link
                     className="dropdown-item"
-                    href="/content/college/tennis-court"
+                    href="/college/tennis-court"
                   >
                     Tennis Courts
                   </Link>
@@ -162,23 +162,23 @@ export default function Navbar() {
                 <div className="dropdown-menu" aria-labelledby="menu-fresher">
                   <Link
                     className="dropdown-item"
-                    href="/content/freshers/why-mildert"
+                    href="/freshers/why-mildert"
                   >
                     Why Mildert?
                   </Link>
                   <Link
                     className="dropdown-item"
-                    href="/content/freshers/freshers-week"
+                    href="/freshers/freshers-week"
                   >
                     Freshers{"'"} Week
                   </Link>
                   <Link
                     className="dropdown-item"
-                    href="/content/freshers/advice"
+                    href="/freshers/advice"
                   >
                     Fresher Advice
                   </Link>
-                  <Link className="dropdown-item" href="/content/freshers/faq">
+                  <Link className="dropdown-item" href="/freshers/faq">
                     Fresher FAQs
                   </Link>
                 </div>
@@ -197,25 +197,25 @@ export default function Navbar() {
                 <div className="dropdown-menu" aria-labelledby="menu-extra">
                   <Link
                     className="dropdown-item"
-                    href="/content/extracurricular/sports"
+                    href="/extracurricular/sports"
                   >
                     Sports Clubs
                   </Link>
                   <Link
                     className="dropdown-item"
-                    href="/content/extracurricular/committees-societies"
+                    href="/extracurricular/committees-societies"
                   >
                     Committees & Societies
                   </Link>
                   <Link
                     className="dropdown-item"
-                    href="/content/extracurricular/outreach"
+                    href="/extracurricular/outreach"
                   >
                     Outreach Projects
                   </Link>
                   <Link
                     className="dropdown-item"
-                    href="/content/extracurricular/interview-tips"
+                    href="/extracurricular/interview-tips"
                   >
                     Interview Technique
                   </Link>
@@ -236,25 +236,25 @@ export default function Navbar() {
                   <p className="mb-0 ps-3 fst-italic">Our events include:</p>
                   <Link
                     className="dropdown-item"
-                    href="/content/events/formals"
+                    href="/events/formals"
                   >
                     Formals
                   </Link>
-                  <Link className="dropdown-item" href="/content/events/bops">
+                  <Link className="dropdown-item" href="/events/bops">
                     BOPs
                   </Link>
-                  <Link className="dropdown-item" href="/content/events/balls">
+                  <Link className="dropdown-item" href="/events/balls">
                     Balls
                   </Link>
                   <Link
                     className="dropdown-item"
-                    href="/content/events/fashion-show"
+                    href="/events/fashion-show"
                   >
                     Charity Fashion Show
                   </Link>
                   <Link
                     className="dropdown-item"
-                    href="/content/events/48-hour-musical"
+                    href="/events/48-hour-musical"
                   >
                     48 Hour Musical
                   </Link>
@@ -274,13 +274,13 @@ export default function Navbar() {
                 <div className="dropdown-menu" aria-labelledby="menu-tech">
                   <Link
                     className="dropdown-item"
-                    href="/content/tech/tech-comm"
+                    href="/tech/tech-comm"
                   >
                     Technical Committee
                   </Link>
                   <Link
                     className="dropdown-item"
-                    href="/content/tech/tech-hires"
+                    href="/tech/tech-hires"
                   >
                     Hires
                   </Link>
@@ -289,7 +289,7 @@ export default function Navbar() {
               <Link
                 id="menu-t&s"
                 className="nav-item nav-link"
-                href="/content/welfare"
+                href="/welfare"
               >
                 Talk and Support
               </Link>
