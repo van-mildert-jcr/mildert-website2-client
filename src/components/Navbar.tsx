@@ -1,9 +1,13 @@
 import Link from "next/link";
 
-import "./Navbar.scss";
-import ColourMode from "@/app/components/ColourMode";
+import ColourMode from "@/components/ColourMode";
+// import { cookies } from "next/dist/client/components/headers";
+// import { AuthenticateCookie } from "@/authenticate";
 
 export default function Navbar() {
+  // const cookieStore = cookies()
+  // const username = cookieStore.get("username")
+  // const token = cookieStore.get("token")
   return (
     <>
       <div
@@ -23,7 +27,7 @@ export default function Navbar() {
         ></button>
       </div>
 
-      <nav className="navbar bg-body-tertiary fixed-top navbar-expand-xl">
+      <nav className="navbar bg-body-tertiary fixed-top navbar-expand-xl" style={{ height: "55px" }}>
         <div className="container-fluid">
           <Link className="navbar-brand" href="/">
             <img
@@ -65,7 +69,7 @@ export default function Navbar() {
                     JCR Purpose
                   </Link>
                   <Link className="dropdown-item" href="/about/whos-who">
-                    Who's Who
+                    Who&#39;s Who
                   </Link>
                   <Link className="dropdown-item" href="/about/faq">
                     FAQ
@@ -295,7 +299,8 @@ export default function Navbar() {
               </Link>
               <ColourMode />
             </div>
-            <Link href="/Dashboard">Dashboard</Link>
+            <Link href="/dashboard">Dashboard</Link><Link href="/login">Login</Link>
+            {/* {AuthenticateCookie(username?.value, token?.value) ? <Link href="/dashboard">Dashboard</Link> : <Link href="/login">Login</Link>} */}
             {/* WE WILL USE THIS LOL --> <login /> */}
             {/* <?php if (\mildert\session\isLoggedIn()): ?>
                       <a className="btn btn-dark me-2" href="/dashboard">Member dashboard</a>
