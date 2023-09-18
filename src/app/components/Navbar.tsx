@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import ColourMode from "@/components/ColourMode";
+import ColourMode from "@/app/components/ColourMode";
 // import { cookies } from "next/dist/client/components/headers";
 // import { AuthenticateCookie } from "@/authenticate";
 
