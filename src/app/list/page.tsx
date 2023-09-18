@@ -21,6 +21,7 @@ class List extends Component<{}, ListState> {
 	}
 
 	// Retrieves the list of items from the Express app
+  // Joe's comment: we should use a React data-fetching library e.g. React SWR, TanStack Query for this.
 	getList = () => {
 		fetch("http://localhost:5000/getList")
 			.then((res) => res.json())
