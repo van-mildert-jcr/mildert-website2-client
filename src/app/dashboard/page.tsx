@@ -16,9 +16,9 @@ export default function Hub() {
               <div className="card-body">
                 <h5 className="card-title">Levy Status</h5>
                 <h6 className="card-subtitle mb-2 text-body-secondary">Purchased? Active? | 1/3 Payments</h6>
-                <p className="card-text">Levy Description. Lorem ipsum something rather or a description of wha tth e levy is and the benefits you can get like not discuounts but definietly something worthwhile oh like sports.</p>
-                <a href="#" className="card-link">Puchase</a>
-                <Link className="card-link" href="/dashboard/member/purchases">Reciepts</Link>
+                <p className="card-text">Levy Description. Lorem ipsum something rather or a description of wha tth e levy is and the benefits you can get like not discounts but definitely something worthwhile oh like sports.</p>
+                <a href="#" className="card-link">Purchase</a>
+                <Link className="card-link" href="/dashboard/member/purchases">Receipts</Link>
               </div>
             </div>
           </div>
@@ -27,9 +27,9 @@ export default function Hub() {
               <div className="card-body">
                 <h5 className="card-title">Fresher Wristband Status</h5>
                 <h6 className="card-subtitle mb-2 text-body-secondary">Purchased? Active? | 1/3 Payments</h6>
-                <p className="card-text">Levy Description. Lorem ipsum something rather or a description of wha tth e levy is and the benefits you can get like not discuounts but definietly something worthwhile oh like sports.</p>
-                <a href="#" className="card-link">Puchase</a>
-                <Link className="card-link" href="/dashboard/member/purchases">Reciepts</Link>
+                <p className="card-text">Levy Description. Lorem ipsum something rather or a description of wha tth e levy is and the benefits you can get like not discounts but definitely something worthwhile oh like sports.</p>
+                <a href="#" className="card-link">Purchase</a>
+                <Link className="card-link" href="/dashboard/member/purchases">Receipts</Link>
               </div>
             </div>
           </div>
