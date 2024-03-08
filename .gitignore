@@ -20,8 +20,8 @@
 !/*env.ts
 !/*rc.json
 
-
 ## Next.js
+!/components.json
 
 ## Markdowns
 !*.md
