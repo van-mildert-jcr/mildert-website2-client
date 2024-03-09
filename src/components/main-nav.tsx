@@ -17,6 +17,7 @@ import { usePathname } from "next/navigation"
 import { siteConfig } from "@/config/site"
 import { cn } from "@/lib/utils"
 import { Icons } from "@/components/icons"
+import { Button } from "@/components/ui/button";
 
 function SiteTitle() {
   return (
@@ -83,6 +84,9 @@ export function MainNav() {
         <NavLink href="/jcr" activePathnamePrefix="/jcr">
           JCR
         </NavLink>
+        <Button asChild className="hidden xl:inline-block">
+          <Link href="/donate">Donate</Link>
+        </Button>
       </nav>
     </div>
   )
