@@ -44,7 +44,7 @@ export function MainNav() {
         className={
           cn(
             "transition-colors hover:text-foreground/80",
-            pathname?.startsWith(activePathnamePrefix)
+            pathname?.match(new RegExp(`^${activePathnamePrefix}\\b`))
               ? "text-foreground"
               : "text-foreground/60"
           )
