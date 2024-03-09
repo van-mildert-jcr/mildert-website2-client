@@ -12,7 +12,7 @@ import React from "react";
 
 const styles: Record<string, React.CSSProperties> = {
   error: {
-    height: '100%',
+    flex: 1,
     textAlign: 'center',
     display: 'flex',
     flexDirection: 'column',
@@ -48,7 +48,7 @@ export type HttpErrorProps = {
 
 export function ServerError(props: HttpErrorProps) {
   return (
-    <div style={styles.error}>
+    <main style={styles.error}>
       <div style={styles.desc}>
         {props.statusCode ? (
           <h1 style={styles.h1}>
@@ -61,6 +61,6 @@ export function ServerError(props: HttpErrorProps) {
           </h2>
         </div>
       </div>
-    </div>
+    </main>
   )
 }
