@@ -15,6 +15,12 @@ export const metadata: Metadata = {
   },
   metadataBase: new URL(siteConfig.url),
   description: siteConfig.description,
+  icons: {
+    icon: "/icon/hd-hi.ico",
+    shortcut: "/icon/16x16.png",
+    apple: "/icon/apple-touch-180x180.png",
+  },
+  manifest: `/site.webmanifest.json`
 };
 
 export default function RootLayout({
