@@ -22,7 +22,7 @@ function SiteTitle() {
   return (
     <Link href="/" className="mr-6 flex items-center space-x-2">
       <Icons.logo className="h-12 w-12" />
-      <span className="hidden font-bold sm:inline-block">
+      <span className="hidden font-bold sm:inline-block text-nowrap whitespace-nowrap">
         {siteConfig.name}
       </span>
     </Link>
@@ -43,7 +43,7 @@ export function MainNav() {
         {...props}
         className={
           cn(
-            "transition-colors hover:text-foreground/80",
+            "transition-colors hover:text-foreground/80 text-nowrap whitespace-nowrap",
             pathname?.match(new RegExp(`^${activePathnamePrefix}\\b`))
               ? "text-foreground"
               : "text-foreground/60"
