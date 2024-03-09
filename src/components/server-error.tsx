@@ -61,7 +61,7 @@ export default function ServerError(props: HttpErrorProps) {
       </Head>
       <div style={styles.desc}>
         {props.statusCode ? (
-          <h1 className="next-error-h1" style={styles.h1}>
+          <h1 style={styles.h1}>
             {props.statusCode}
           </h1>
         ) : null}
