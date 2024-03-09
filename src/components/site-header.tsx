@@ -8,8 +8,6 @@ Copyright (c) 2024 Van Mildert JCR
 All rights reserved.
  */
 
-import Link from "next/link"
-
 import { MainNav } from "@/components/main-nav"
 import { MobileNav } from "@/components/mobile-nav"
 import { ColourModeToggle } from "@/components/colour-mode-toggle"
