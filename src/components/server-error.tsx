@@ -31,6 +31,7 @@ const styles: Record<string, React.CSSProperties> = {
     fontSize: 24,
     fontWeight: 500,
     verticalAlign: 'top',
+    borderRight: "1px solid hsl(var(--foreground) / 0.5)"
   },
   h2: {
     fontSize: 14,
