@@ -26,8 +26,11 @@ type CarouselContextProps = {
   api: ReturnType<typeof useEmblaCarousel>[1]
   scrollPrev: () => void
   scrollNext: () => void
+  scrollTo: (scrollSnap: number) => void
   canScrollPrev: boolean
   canScrollNext: boolean
+  selectedIndex: number
+  scrollSnaps: number[]
 } & CarouselProps
 
 const CarouselContext = React.createContext<CarouselContextProps | null>(null)
@@ -67,6 +70,8 @@ const Carousel = React.forwardRef<
     )
     const [canScrollPrev, setCanScrollPrev] = React.useState(false)
     const [canScrollNext, setCanScrollNext] = React.useState(false)
+    const [selectedIndex, setSelectedIndex] = React.useState(0)
+    const [scrollSnaps, setScrollSnaps] = React.useState<number[]>([])
 
     const onSelect = React.useCallback((api: CarouselApi) => {
       if (!api) {
@@ -75,6 +80,8 @@ const Carousel = React.forwardRef<
 
       setCanScrollPrev(api.canScrollPrev())
       setCanScrollNext(api.canScrollNext())
+      setSelectedIndex(api.selectedScrollSnap())
+      setScrollSnaps(api.scrollSnapList())
     }, [])
 
     const scrollPrev = React.useCallback(() => {
@@ -83,6 +90,10 @@ const Carousel = React.forwardRef<
 
     const scrollNext = React.useCallback(() => {
       api?.scrollNext()
+    }, [api])
+
+    const scrollTo = React.useCallback((scrollSnap: number) => {
+      api?.scrollTo(scrollSnap)
     }, [api])
 
     const handleKeyDown = React.useCallback(
@@ -130,8 +141,11 @@ const Carousel = React.forwardRef<
             orientation || (opts?.axis === "y" ? "vertical" : "horizontal"),
           scrollPrev,
           scrollNext,
+          scrollTo,
           canScrollPrev,
           canScrollNext,
+          selectedIndex,
+          scrollSnaps,
         }}
       >
         <div
@@ -206,10 +220,10 @@ const CarouselPrevious = React.forwardRef<
       variant={variant}
       size={size}
       className={cn(
-        "absolute  h-8 w-8 rounded-full",
+        "absolute h-8 w-8 rounded-full",
         orientation === "horizontal"
-          ? "-left-12 top-1/2 -translate-y-1/2"
-          : "-top-12 left-1/2 -translate-x-1/2 rotate-90",
+          ? "left-4 top-1/2 -translate-y-1/2"
+          : "top-4 left-1/2 -translate-x-1/2 rotate-90",
         className
       )}
       disabled={!canScrollPrev}
@@ -237,8 +251,8 @@ const CarouselNext = React.forwardRef<
       className={cn(
         "absolute h-8 w-8 rounded-full",
         orientation === "horizontal"
-          ? "-right-12 top-1/2 -translate-y-1/2"
-          : "-bottom-12 left-1/2 -translate-x-1/2 rotate-90",
+          ? "right-4 top-1/2 -translate-y-1/2"
+          : "bottom-4 left-1/2 -translate-x-1/2 rotate-90",
         className
       )}
       disabled={!canScrollNext}
@@ -252,6 +266,64 @@ const CarouselNext = React.forwardRef<
 })
 CarouselNext.displayName = "CarouselNext"
 
+const CarouselDot = React.forwardRef<
+  HTMLButtonElement,
+  React.ComponentProps<typeof Button> & { carouselDotIndex: number }
+>(({ className, variant = "outline", size = "icon", carouselDotIndex, ...props}, ref) => {
+  const { scrollTo, selectedIndex: selectedSlideIndex } = useCarousel();
+
+  return (
+    <Button
+      ref={ref}
+      variant={variant}
+      size={size}
+      className={cn(
+        "h-4 w-4 rounded-full",
+        selectedSlideIndex == carouselDotIndex
+          ? ""
+          : "bg-transparent",
+        className
+      )}
+      onClick={() => scrollTo(carouselDotIndex)}
+    >
+      <span className="sr-only">Slide {carouselDotIndex}</span>
+    </Button>
+  )
+})
+CarouselDot.displayName = "CarouselDot"
+
+const CarouselDots = React.forwardRef<
+  HTMLDivElement,
+  React.HTMLAttributes<HTMLDivElement>
+>(({ className, ...props }, ref) => {
+  const { orientation, scrollSnaps } = useCarousel();
+
+  function makeDot(_: number, index: number) {
+    return (
+      <CarouselDot
+        key={index}
+        carouselDotIndex={index}
+      />
+    )
+  }
+
+  return (
+    <nav
+      ref={ref}
+      className={cn(
+        "absolute flex h-8 w-1/2 items-center justify-center gap-2",
+        orientation === "horizontal"
+          ? "bottom-4 left-1/2 -translate-x-1/2"
+          : "left-4 top-1/2 -translate-y-1/2 rotate-90",
+        className
+      )}
+    >
+      {scrollSnaps.map(makeDot)}
+    </nav>
+  )
+})
+CarouselDots.displayName = "CarouselDots"
+
 export {
   type CarouselApi,
   Carousel,
@@ -259,4 +331,5 @@ export {
   CarouselItem,
   CarouselPrevious,
   CarouselNext,
+  CarouselDots,
 }
