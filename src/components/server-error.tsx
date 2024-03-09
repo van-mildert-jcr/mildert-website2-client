@@ -9,12 +9,10 @@ All rights reserved.
  */
 
 import React from "react";
-import Head from "next/head";
 
 const styles: Record<string, React.CSSProperties> = {
   error: {
-    // https://github.com/sindresorhus/modern-normalize/blob/main/modern-normalize.css#L38-L52
-    height: '80vh',
+    height: '100%',
     textAlign: 'center',
     display: 'flex',
     flexDirection: 'column',
@@ -45,20 +43,12 @@ const styles: Record<string, React.CSSProperties> = {
 
 export type HttpErrorProps = {
   statusCode?: string,
-  conciseMessage?: string,
   message: string,
 }
 
-export default function ServerError(props: HttpErrorProps) {
+export function ServerError(props: HttpErrorProps) {
   return (
     <div style={styles.error}>
-      <Head>
-        <meta
-          key="title"
-          property="og:title"
-          content={props.conciseMessage ? props.conciseMessage : "Unexpected Error"}
-        />
-      </Head>
       <div style={styles.desc}>
         {props.statusCode ? (
           <h1 style={styles.h1}>
