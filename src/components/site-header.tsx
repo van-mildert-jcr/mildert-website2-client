@@ -8,10 +8,14 @@ Copyright (c) 2024 Van Mildert JCR
 All rights reserved.
  */
 
+import * as React from "react";
+import Link from "next/link";
+import { PersonIcon } from "@radix-ui/react-icons";
 import { MainNav } from "@/components/main-nav"
 import { MobileNav } from "@/components/mobile-nav"
 import { SecondaryNav } from "@/components/secondary-nav";
 import { ColourModeToggle } from "@/components/colour-mode-toggle"
+import { Button } from "@/components/ui/button";
 
 export function SiteHeader() {
   return (
@@ -30,6 +34,11 @@ export function SiteHeader() {
           {/* Icon nav (socials, colour mode, dashboard) */}
           <nav className="flex items-center">
             <ColourModeToggle />
+            <Button variant="ghost" className="w-9 px-0" asChild>
+              <Link href="/dashboard">
+                <PersonIcon className="h-[1.2rem] w-[1.2rem]"/>
+              </Link>
+            </Button>
           </nav>
         </div>
 
