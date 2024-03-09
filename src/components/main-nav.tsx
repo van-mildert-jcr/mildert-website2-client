@@ -37,13 +37,10 @@ type NavLinkProps = LinkProps & {
 export function MainNav() {
   const pathname = usePathname()
 
-  function NavLink(props: NavLinkProps) {
-
-    const { activePathnamePrefix, children, ...restProps } = props;
-
+  function NavLink({ activePathnamePrefix, children, ...props }: NavLinkProps) {
     return (
       <Link
-        {...restProps}
+        {...props}
         className={
           cn(
             "transition-colors hover:text-foreground/80",
