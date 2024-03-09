@@ -5,6 +5,7 @@ import "@/styles/globals.css";
 import { SiteHeader } from "@/components/site-header";
 import { ThemeProvider } from "@/components/theme-provider";
 import { siteConfig } from "@/config/site";
+import { cn } from "@/lib/utils";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -30,15 +31,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={cn(inter.className, "min-h-screen antialiased bg-background")}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
         >
-          <SiteHeader/>
-          {children}
+          <div className="relative flex min-h-screen flex-col bg-background">
+            <SiteHeader/>
+            {children}
+            <footer />
+          </div>
         </ThemeProvider>
       </body>
     </html>
