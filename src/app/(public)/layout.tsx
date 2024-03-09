@@ -6,7 +6,7 @@ export default function PublicLayout({
   children: React.ReactNode,
 }>) {
   return (
-    <main className="flex-1">
+    <main className="flex-1 container">
       {children}
     </main>
   );
