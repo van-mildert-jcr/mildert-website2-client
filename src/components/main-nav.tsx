@@ -57,9 +57,9 @@ export function MainNav() {
   }
 
   return (
-    <div className="mr-4 hidden md:flex">
-      <SiteTitle />
-      <nav className="flex items-center gap-6 text-sm">
+    <div className="mr-4 hidden sm:flex">
+      <SiteTitle/>
+      <nav className="items-center gap-6 text-sm hidden lg:flex">
         <NavLink href="/events" activePathnamePrefix="/events">
           Events
         </NavLink>
