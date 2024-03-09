@@ -16,7 +16,7 @@ const styles: Record<string, React.CSSProperties> = {
     // https://github.com/sindresorhus/modern-normalize/blob/main/modern-normalize.css#L38-L52
     fontFamily:
       'system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji"',
-    height: '100vh',
+    height: '80vh',
     textAlign: 'center',
     display: 'flex',
     flexDirection: 'column',
