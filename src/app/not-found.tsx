@@ -8,8 +8,6 @@ export const metadata: Metadata = {
 
 export default function NotFound() {
   return (
-    <div style={{height: "80vh"}}>
-      <ServerError statusCode="404" message="The page could not be found" />
-    </div>
+    <ServerError statusCode="404" message="The page could not be found" />
   )
 }
