@@ -17,5 +17,5 @@ export const siteConfig = {
     "github": "https://github.com/van-mildert-jcr"
   }
 }
-1
+
 export type SiteConfig = typeof siteConfig
