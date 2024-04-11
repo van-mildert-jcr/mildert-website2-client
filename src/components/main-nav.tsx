@@ -16,6 +16,7 @@ import { usePathname } from "next/navigation"
 
 import { Icons } from "@/components/icons"
 import { Button } from "@/components/ui/button";
+import { navConfig } from "@/config/nav";
 import { siteConfig } from "@/config/site"
 import { cn } from "@/lib/utils"
 
@@ -60,30 +61,19 @@ export function MainNav() {
     <div className="mr-4 hidden sm:flex">
       <SiteTitle/>
       <nav className="items-center gap-6 text-sm hidden lg:flex">
-        <NavLink href="/events" activePathnamePrefix="/events">
-          Events
-        </NavLink>
-        <NavLink href="/outreach" activePathnamePrefix="/outreach">
-          Outreach
-        </NavLink>
-        <NavLink href="/sports-and-societies" activePathnamePrefix="/sports-and-societies">
-          Sports & Socs
-        </NavLink>
-        <NavLink href="/freshers" activePathnamePrefix="/freshers">
-          Freshers &apos;24
-        </NavLink>
-        <NavLink href="/welfare" activePathnamePrefix="/welfare">
-          Welfare
-        </NavLink>
-        <NavLink href="/committees" activePathnamePrefix="/committees">
-          Committees
-        </NavLink>
-        <NavLink href="/facilities" activePathnamePrefix="/facilities">
-          Facilities
-        </NavLink>
-        <NavLink href="/jcr" activePathnamePrefix="/jcr">
-          JCR
-        </NavLink>
+        {
+          navConfig.mainNavItems.map(
+            (item, index) => {
+              if (!item.href) return null;
+
+              return (
+                <NavLink key={index} href={item.href} activePathnamePrefix={item.href}>
+                  {item.title}
+                </NavLink>
+              )
+            }
+          )
+        }
         <Button asChild className="hidden xl:inline-block">
           <Link href="/donate">Donate</Link>
         </Button>
