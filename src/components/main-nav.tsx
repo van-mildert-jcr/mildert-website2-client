@@ -21,9 +21,9 @@ import { cn } from "@/lib/utils"
 
 function SiteTitle() {
   return (
-    <Link href="/" className="mr-6 flex items-center space-x-2">
+    <Link href="/" className="mr-6 hidden lg:flex items-center space-x-2">
       <Icons.logo className="h-12 w-12" />
-      <span className="hidden font-bold sm:inline-block text-nowrap whitespace-nowrap">
+      <span className="inline-block font-bold text-nowrap whitespace-nowrap">
         {siteConfig.name}
       </span>
     </Link>
