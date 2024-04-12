@@ -67,7 +67,7 @@ export function MainNav() {
               if (!item.href) return null;
 
               return (
-                <NavLink key={index} href={item.href} activePathnamePrefix={item.href}>
+                <NavLink key={index} href={item.href} activePathnamePrefix={item.activePathnamePrefix || item.href}>
                   {item.title}
                 </NavLink>
               )
