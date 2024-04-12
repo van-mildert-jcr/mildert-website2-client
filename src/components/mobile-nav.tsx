@@ -125,10 +125,10 @@ export function MobileNav() {
     }
 
     function SubItems() {
-      if (!itemConfig.items?.length) return null
+      if (itemConfig.items.length == 0) return null
 
       return (
-        <>{itemConfig.items?.map(SidebarNavSubItem)}</>
+        <>{itemConfig.items.map(SidebarNavSubItem)}</>
       )
     }
 
