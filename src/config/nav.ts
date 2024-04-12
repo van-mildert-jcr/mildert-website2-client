@@ -9,7 +9,8 @@ export const navConfig: NavConfig = {
   mainNavItems: [
     {
       title: "Resources",
-      href: "/resources",
+      href: "/resources/events",
+      activePathnamePrefix: "/resources"
     },
     {
       title: "JCR",

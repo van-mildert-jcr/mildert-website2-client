@@ -3,6 +3,7 @@ import { Icons } from "@/components/icons"
 type NavItem = {
   title: string
   href?: string
+  activePathnamePrefix?: string
   disabled?: boolean
   external?: boolean
   icon?: keyof typeof Icons
