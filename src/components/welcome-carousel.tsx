@@ -31,7 +31,7 @@ export function WelcomeCarousel() {
       </div>
       <section className="bg-yellow-accent pl-4">
         <div className="h-full flex flex-col items-center justify-center ">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-black">Welcome to the home of Van Mildert JCR.</h1>
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-yellow-accent-foreground">Welcome to the home of Van Mildert JCR.</h1>
         </div>
       </section>
     </article>
