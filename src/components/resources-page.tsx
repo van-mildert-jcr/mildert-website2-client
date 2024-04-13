@@ -49,6 +49,14 @@ export function ResourcesPageTitle({className, value, description, ...props}: Re
   )
 }
 
+export function ResourcesPageContent({children, className, ...props}: React.HTMLAttributes<HTMLDivElement>) {
+  return (
+    <div className={cn("pt-8", className)}>
+      {children}
+    </div>
+  )
+}
+
 export function ResourcesPage({children, className, ...props}: React.HTMLAttributes<HTMLDivElement>) {
   return (
     <main className={cn("relative py-6 lg:gap-10 lg:py-8 xl:grid xl:grid-cols-[1fr]")}>
