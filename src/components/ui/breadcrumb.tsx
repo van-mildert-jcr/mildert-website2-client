@@ -1,4 +1,5 @@
 import * as React from "react"
+import Link from "next/link";
 import { ChevronRightIcon, DotsHorizontalIcon } from "@radix-ui/react-icons"
 import { Slot } from "@radix-ui/react-slot"
 
@@ -57,6 +58,20 @@ const BreadcrumbLink = React.forwardRef<
 })
 BreadcrumbLink.displayName = "BreadcrumbLink"
 
+const BreadcrumbLinkNext = React.forwardRef<
+  React.ElementRef<typeof BreadcrumbLink>,
+  React.ComponentPropsWithoutRef<typeof Link>
+>(
+  ({ ...props }, ref ) => {
+    return (
+      <BreadcrumbLink ref={ref} asChild>
+        <Link {...props} />
+      </BreadcrumbLink>
+    )
+  }
+)
+BreadcrumbLinkNext.displayName = "BreadcrumbLinkNext"
+
 const BreadcrumbPage = React.forwardRef<
   HTMLSpanElement,
   React.ComponentPropsWithoutRef<"span">
@@ -109,6 +124,7 @@ export {
   BreadcrumbList,
   BreadcrumbItem,
   BreadcrumbLink,
+  BreadcrumbLinkNext,
   BreadcrumbPage,
   BreadcrumbSeparator,
   BreadcrumbEllipsis,
