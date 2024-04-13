@@ -29,7 +29,7 @@ export function WelcomeCarousel() {
           <CarouselDots/>
         </Carousel>
       </div>
-      <section className="bg-yellow-400 pl-4">
+      <section className="bg-yellow-accent pl-4">
         <div className="h-full flex flex-col items-center justify-center ">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-black">Welcome to the home of Van Mildert JCR.</h1>
         </div>
