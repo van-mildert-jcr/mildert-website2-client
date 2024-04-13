@@ -19,6 +19,8 @@
     --muted-foreground: 240 3.8% 46.1%;
     --accent: 240 4.8% 95.9%;
     --accent-foreground: 240 5.9% 10%;
+    --yellow-accent: 47.9 95.8% 53.1%;
+    --yellow-accent-foreground: 46 97% 65%;
     --destructive: 0 72.22% 50.59%;
     --destructive-foreground: 0 0% 98%;
     --border: 240 5.9% 90%;
@@ -42,6 +44,8 @@
     --muted-foreground: 240 5% 64.9%;
     --accent: 240 3.7% 15.9%;
     --accent-foreground: 0 0% 98%;
+    --yellow-accent: 47.9 95.8% 53.1%;
+    --yellow-accent-foreground: 46 97% 65%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 85.7% 97.3%;
     --border: 240 3.7% 15.9%;
