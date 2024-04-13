@@ -2,22 +2,44 @@
 
 import * as React from "react"
 import { AspectRatio } from "@/components/ui/aspect-ratio"
+import { TileContext, TileContextProps } from "@/components/ui/tile-grid/tile-context"
 import { useCanHover } from "@/lib/hooks/canHover"
 import { cn } from "@/lib/utils"
 
-const Tile = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>(
-  ({className, children, ...props}, ref) => {
+type TileProps = {
+
+} & Partial<TileContextProps>
+
+const Tile = React.forwardRef<
+  HTMLDivElement,
+  React.HTMLAttributes<HTMLDivElement> & TileProps
+>(
+  (
+    {
+      className,
+      children,
+      alignForeground,
+      ...props
+    },
+    ref
+  ) => {
     const canHover = useCanHover();
+
+    const contextProps: TileContextProps = {
+      alignForeground: alignForeground ?? "left",
+    }
 
     return (
       <AspectRatio
-        ratio={1}
+        ratio={canHover ? 1 : 2}
         ref={ref}
-        className={cn("group", className)}
+        className={cn("group bg-accent", className)}
         {...props}
       >
         <div className="relative h-full">
-          {children}
+          <TileContext.Provider value={contextProps}>
+            {children}
+          </TileContext.Provider>
         </div>
       </AspectRatio>
     )
