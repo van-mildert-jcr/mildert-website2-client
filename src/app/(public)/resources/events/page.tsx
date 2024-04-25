@@ -89,6 +89,16 @@ export default function Home() {
               </TileForeground>
             </TileLink>
           </Tile>
+          <Tile alignForeground="right">
+            <TileLink href="/resources/events/fashion-show">
+              <TileBackground />
+              <TileForeground className="bg-yellow-accent">
+                <TileContent className="text-yellow-accent-foreground font-bold">
+                  Fashion Show
+                </TileContent>
+              </TileForeground>
+            </TileLink>
+          </Tile>
         </TileGrid>
       </ResourcesPageContent>
 

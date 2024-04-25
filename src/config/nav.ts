@@ -46,6 +46,10 @@ export const navConfig: NavConfig = {
           title: "Formals",
           href: "/resources/events/mildert-day",
         },
+        {
+          title: "Fashion Show",
+          href: "/resources/events/fashion-show",
+        }
       ],
     },
     {
