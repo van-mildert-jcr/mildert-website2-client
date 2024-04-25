@@ -68,6 +68,18 @@ export const navConfig: NavConfig = {
           title: "Queer Awareness Project",
           href: "/resources/outreach/queer-awareness-project",
         },
+        {
+          title: "Mildert for Refugees",
+          href: "/resources/outreach/mildert-for-refugees",
+        },
+        {
+          title: "Primary School Project",
+          href: "/resources/outreach/primary-school-project",
+        },
+        {
+          title: "Environmental Conservation",
+          href: "/resources/outreach/environmental-conservation-committee",
+        }
       ],
     },
     {
