@@ -8,7 +8,7 @@
 
 ## Package manager
 !/package.json
-!/package-lock.json
+!/pnpm-lock.yaml
 
 ## Config files
 !/*config.ts
