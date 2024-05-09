@@ -30,7 +30,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en-GB">
       <body className={cn(inter.className, "min-h-screen antialiased bg-background")}>
         <ThemeProvider
           attribute="class"
