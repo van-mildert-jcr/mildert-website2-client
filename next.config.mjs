@@ -1,5 +1,3 @@
-import { createContentlayerPlugin } from "next-contentlayer2"
-
 /**
  * @typedef {import('next').NextConfig} NextConfig
  */
@@ -7,10 +5,6 @@ import { createContentlayerPlugin } from "next-contentlayer2"
 /** @type {NextConfig} */
 const nextConfig = {
 };
-
-const withContentlayer = createContentlayerPlugin({
-  // Additional Contentlayer config options
-});
 
 /**
  * @callback NextPluginApplicator
@@ -44,5 +38,4 @@ class ConfigBuilder {
 }
 
 export default new ConfigBuilder(nextConfig)
-  .apply(withContentlayer)
   .get()
