@@ -5,6 +5,7 @@ import rehypeSlug from "rehype-slug";
 export default defineConfig({
   root: "src/content",
   mdx: {
+    gfm: true,
     rehypePlugins: [
       rehypeSlug,
       rehypeAutolinkHeadings,
