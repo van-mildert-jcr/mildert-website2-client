@@ -15,7 +15,7 @@ export default defineConfig({
   },
   collections: {
     "events": {
-      name: 'Event Page',
+      name: 'EventPage',
       pattern: 'resources/events/**/*.mdx',
       schema: s
         .object({
