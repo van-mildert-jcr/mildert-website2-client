@@ -18,8 +18,8 @@ export default defineConfig({
       schema: s
         .object({
           title: s.string().max(99),
-          slug: s.slug('resources/events'),
           content: s.mdx()
+          slug: s.path(),
         })
         // more additional fields (computed fields)
         .transform(data => ({ ...data, permalink: `/resources/events/${data.slug}` })),
